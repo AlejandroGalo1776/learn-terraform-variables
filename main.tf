@@ -134,7 +134,7 @@ module "ec2_instances" {
 # module below added for DAY2 LAB 8 :  HCP Terraform ublish
 module "s3-bucket-agg" {
   source  = "app.terraform.io/policy-as-code-training/s3-bucket-agg/aws"
-  version = "1.3.0"
+  version = "1.4.0"
   # insert required variables here
   bucket_name = "agg-bucket"  
 }
