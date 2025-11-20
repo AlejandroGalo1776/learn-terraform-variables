@@ -137,4 +137,5 @@ module "s3-bucket-agg" {
   version = "1.2.0"
   # insert required variables here
   bucket_name = "agg-bucket"
+  # add new comment to force a file change
 }
