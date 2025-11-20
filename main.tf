@@ -138,4 +138,5 @@ module "s3-bucket-agg" {
   # insert required variables here
   bucket_name = "agg-bucket"
   # add new comment to force a file change
+  # add another comment
 }
