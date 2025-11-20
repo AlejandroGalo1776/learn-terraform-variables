@@ -136,5 +136,5 @@ module "s3-bucket-agg" {
   source  = "app.terraform.io/policy-as-code-training/s3-bucket-agg/aws"
   version = "1.4.0"
   # insert required variables here
-  bucket_name = "agg-bucket_2025-11-20"  
+  bucket_name = "agg-bucket-2025-11-20"  
 }
