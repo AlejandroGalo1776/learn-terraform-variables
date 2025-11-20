@@ -36,7 +36,7 @@ module "vpc" {
   enable_vpn_gateway = false
 
   tags = {
-    project     = "project-alpha",
+    project = "project-alpha",
     #environment = "dev"
     environment = "development"
   }
@@ -129,4 +129,12 @@ module "ec2_instances" {
     project     = "project-alpha",
     environment = "dev"
   }
+}
+
+# module below added for DAY2 LAB 8 :  HCP Terraform ublish
+module "s3-bucket-agg" {
+  source  = "app.terraform.io/policy-as-code-training/s3-bucket-agg/aws"
+  version = "1.2.0"
+  # insert required variables here
+  bucket_name = "agg-bucket"
 }
